@@ -12,8 +12,7 @@ and directory names.
 
 5. If there is more than one argument specified, there will be an error message and the script terminated (exit status 1).
 
-6. If the specified filename is not a valid, existing file or directory, there will be an error message and the script terminated
-(exit status 1).
+6. If the specified filename is not a valid, existing file or directory, there will be an error message and the script terminated (exit status 1).
 
 7. Please see the examples for the exact display format, and match this format as closely as possible. Note that
 the screen is cleared before the output is displayed. There are 3 spaces between the permission groups, and between the permission groups and the filename. There is one space between the permissions within a permission group, and between the file type and the permissions.
@@ -22,8 +21,7 @@ the screen is cleared before the output is displayed. There are 3 spaces between
 
 9. Ignore the situation of a very long directory name, which would wrap to the next line.
 
-10. On initial display, the cursor will be on the first character of the specified (or default) filename. Information for this file
-will also be displayed.
+10. On initial display, the cursor will be on the first character of the specified (or default) filename. Information for this file will also be displayed.
 
 11. There is a line showing the valid keys accepted during execution of the showpath command, on the second line from
 the bottom of the terminal window, regardless of the terminal window size used.
@@ -31,7 +29,7 @@ the bottom of the terminal window, regardless of the terminal window size used.
 12. After the initial display, the valid keys available are the following. Note that these are single­key options with no "enter"
 key required after any of them, and that they are lower case:
 'u' (up) will move the cursor to the first character of the directory name above the current line. Also, information for the new directory level will be displayed, instead of the previous directory level. This key will have no affect if the cursor is already on the top­most filename, which will be the root.
-'d' (down) will move the cursor to the first character of the file or directory name below the current line. Also, information for the new file or directory level will be displayed, instead of the previous directory level. This key will have no affect if the cursor is already on the bottom­most filename, which will be the specified (or default) filename.
+'d' (down) will move the cursor to the first character of the file or directory name below the current line. Also, information for the new file or directory level will be displayed, instead of the previous directory level. This key will have no affect if the cursor is already on the bottom most filename, which will be the specified (or default) filename.
 "q" will terminate the showpath script. Note that the screen is not cleared, and the command prompt will appear
 on the bottom line of the terminal window.
 
@@ -42,7 +40,7 @@ down, you may not redraw the entire screen. You must eliminate the flashing, mak
 use, by only redrawing the parts of the screen that are necessary.
 
 15. If showpath produced full­screen output, it must end with an exit status of 0 (zero). If there was an error, then there is
-no full­screen output, and the exit status should be 1 (one).
+no full screen output, and the exit status should be 1 (one).
 
 16. Ensure that your script is self­contained in one script file, called showpath. Limit "sed" and "awk" to single­line
 commands with no separate script files required.
